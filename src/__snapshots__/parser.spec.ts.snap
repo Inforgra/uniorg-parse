@@ -1,0 +1,5362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`org/parser \\_<SPC> 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 4
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 4
+    children:
+      - type: "entity"
+        useBrackets: false
+        name: "_ "
+        latex: "\\\\hspace*{0.5em}"
+        requireLatexMath: false
+        html: "&ensp;"
+        ascii: " "
+        latin1: " "
+        utf8: " "
+      - type: "text"
+        value: "a"
+`;
+
+exports[`org/parser affiliated keyword dual keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "fixed-width"
+    affiliated:
+      RESULTS:
+        - ""
+        - "A"
+    value: "Hello, world!"
+`;
+
+exports[`org/parser affiliated keyword keyword renaming 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 36
+children:
+  - type: "src-block"
+    affiliated:
+      NAME: "hi"
+    switches: null
+    parameters: null
+    value: ""
+`;
+
+exports[`org/parser affiliated keyword multiple keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 36
+children:
+  - type: "paragraph"
+    affiliated:
+      NAME: "name"
+      CAPTION:
+        - - type: "text"
+            value: "hi\\n"
+    contentsBegin: 27
+    contentsEnd: 36
+    children:
+      - type: "text"
+        value: "paragraph"
+`;
+
+exports[`org/parser affiliated keyword multiple same keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 78
+children:
+  - type: "paragraph"
+    affiliated:
+      NAME: "name2"
+      CAPTION:
+        - - type: "text"
+            value: "caption1\\n"
+        - - type: "text"
+            value: "caption2\\n"
+    contentsBegin: 69
+    contentsEnd: 78
+    children:
+      - type: "text"
+        value: "paragraph"
+`;
+
+exports[`org/parser affiliated keyword name 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 55
+children:
+  - type: "src-block"
+    affiliated:
+      NAME: "source"
+    language: "org"
+    switches: null
+    parameters: null
+    value: "some paragraph\\n"
+`;
+
+exports[`org/parser affiliated keyword parsed keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated:
+      CAPTION:
+        - - type: "text"
+            value: "hello "
+          - type: "bold"
+            contentsBegin: 18
+            contentsEnd: 23
+            children:
+              - type: "text"
+                value: "world"
+    contentsBegin: 25
+    contentsEnd: 34
+    children:
+      - type: "text"
+        value: "paragraph"
+`;
+
+exports[`org/parser blocks #+ escaper in src block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 37
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "org"
+    switches: null
+    parameters: null
+    value: "#+ escaped\\n"
+`;
+
+exports[`org/parser blocks center block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 33
+children:
+  - type: "center-block"
+    affiliated: {}
+    contentsBegin: 15
+    contentsEnd: 21
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 15
+        contentsEnd: 21
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser blocks comma escaper in src block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 49
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "org"
+    switches: null
+    parameters: null
+    value: ",,* two commas escaped\\n"
+`;
+
+exports[`org/parser blocks comment block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 35
+children:
+  - type: "comment-block"
+    affiliated: {}
+    value: "hello\\n"
+`;
+
+exports[`org/parser blocks escaper in src block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 32
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "c"
+    switches: null
+    parameters: null
+    value: "*a = 0;\\n"
+`;
+
+exports[`org/parser blocks example block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 32
+children:
+  - type: "example-block"
+    affiliated: {}
+    value: "hi\\n"
+`;
+
+exports[`org/parser blocks export block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "export-block"
+    affiliated: {}
+    backend: null
+    value: "hi\\n"
+`;
+
+exports[`org/parser blocks export block with backend 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 35
+children:
+  - type: "export-block"
+    affiliated: {}
+    backend: "html"
+    value: "hi\\n"
+`;
+
+exports[`org/parser blocks export block with incorrect header 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 55
+children:
+  - type: "export-block"
+    affiliated: {}
+    backend: null
+    value: "Hi, there!\\n"
+`;
+
+exports[`org/parser blocks fake block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 42
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "text"
+        value: "#+nonblock\\n"
+  - type: "special-block"
+    affiliated: {}
+    blockType: "block"
+    contentsBegin: 25
+    contentsEnd: 31
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 25
+        contentsEnd: 31
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser blocks fake block 2 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 34
+    children:
+      - type: "text"
+        value: "#+ begin"
+      - type: "subscript"
+        contentsBegin: 9
+        contentsEnd: 12
+        children:
+          - type: "text"
+            value: "src"
+      - type: "text"
+        value: "\\nnot a block\\n#+end"
+      - type: "subscript"
+        contentsBegin: 31
+        contentsEnd: 34
+        children:
+          - type: "text"
+            value: "src"
+`;
+
+exports[`org/parser blocks fake escaper 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 41
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "org"
+    switches: null
+    parameters: null
+    value: ",# nont escaped\\n"
+`;
+
+exports[`org/parser blocks headline escaper in src block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 44
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "org"
+    switches: null
+    parameters: null
+    value: "* not a headline;\\n"
+`;
+
+exports[`org/parser blocks incomplete block after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "hello\\n#+begin"
+      - type: "subscript"
+        contentsBegin: 14
+        contentsEnd: 17
+        children:
+          - type: "text"
+            value: "src"
+      - type: "text"
+        value: "\\nnot a code"
+`;
+
+exports[`org/parser blocks quote block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 31
+children:
+  - type: "quote-block"
+    affiliated: {}
+    contentsBegin: 14
+    contentsEnd: 20
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 14
+        contentsEnd: 20
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser blocks special block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "special-block"
+    affiliated: {}
+    blockType: "blah"
+    contentsBegin: 13
+    contentsEnd: 19
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 13
+        contentsEnd: 19
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser blocks src block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "src-block"
+    affiliated: {}
+    switches: null
+    parameters: null
+    value: "hello\\n"
+`;
+
+exports[`org/parser blocks src block with parameters 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 52
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "js"
+    switches: null
+    parameters: ":exports none"
+    value: "const t = 10\\n"
+`;
+
+exports[`org/parser blocks src block with switches 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 44
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "js"
+    switches: "+n 10"
+    parameters: null
+    value: "const t = 10\\n"
+`;
+
+exports[`org/parser blocks src block with switches and parameters 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 58
+children:
+  - type: "src-block"
+    affiliated: {}
+    language: "js"
+    switches: "+n 10"
+    parameters: ":exports none"
+    value: "const t = 10\\n"
+`;
+
+exports[`org/parser blocks src in list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 44
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 1
+    contentsEnd: 44
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 44
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 12
+            children:
+              - type: "text"
+                value: "example:\\n"
+          - type: "src-block"
+            affiliated: {}
+            switches: null
+            parameters: null
+            value: "  blah\\n"
+`;
+
+exports[`org/parser blocks verse block 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 121
+children:
+  - type: "verse-block"
+    affiliated: {}
+    contentsBegin: 14
+    contentsEnd: 110
+    children:
+      - type: "text"
+        value: " Great clouds overhead
+
+          \\ Tiny black birds rise and fall
+
+          \\ Snow covers Emacs
+
+
+          \\    ---AlexSchroeder\\n"
+`;
+
+exports[`org/parser citations common prefix 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 27
+    children:
+      - type: "citation"
+        begin: 0
+        end: 27
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 26
+        children:
+          - type: "citation-common-prefix"
+            contentsBegin: 6
+            contentsEnd: 19
+            children:
+              - type: "text"
+                value: "common prefix"
+          - type: "citation-reference"
+            key: "hello"
+            begin: 20
+            end: 26
+            contentsBegin: 20
+            contentsEnd: 26
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations common prefix with semicolon 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 43
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 43
+    children:
+      - type: "citation"
+        begin: 0
+        end: 43
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 42
+        children:
+          - type: "citation-common-prefix"
+            contentsBegin: 6
+            contentsEnd: 35
+            children:
+              - type: "text"
+                value: "common prefix; with semicolon"
+          - type: "citation-reference"
+            key: "hello"
+            begin: 36
+            end: 42
+            contentsBegin: 36
+            contentsEnd: 42
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations common suffix 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "citation"
+        begin: 0
+        end: 28
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 27
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 13
+            contentsBegin: 6
+            contentsEnd: 12
+            children:
+              - type: "citation-key"
+                key: "hello"
+          - type: "citation-common-suffix"
+            contentsBegin: 13
+            contentsEnd: 27
+            children:
+              - type: "text"
+                value: " common suffix"
+`;
+
+exports[`org/parser citations multiple citation keys 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "citation"
+        begin: 0
+        end: 20
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 19
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 13
+            contentsBegin: 6
+            contentsEnd: 12
+            children:
+              - type: "citation-key"
+                key: "hello"
+          - type: "citation-reference"
+            key: "world"
+            begin: 13
+            end: 19
+            contentsBegin: 13
+            contentsEnd: 19
+            children:
+              - type: "citation-key"
+                key: "world"
+`;
+
+exports[`org/parser citations reference prefix 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 19
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 19
+    children:
+      - type: "citation"
+        begin: 0
+        end: 19
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 18
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 18
+            contentsBegin: 6
+            contentsEnd: 18
+            children:
+              - type: "citation-prefix"
+                contentsBegin: 6
+                contentsEnd: 12
+                children:
+                  - type: "text"
+                    value: "prefi "
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations reference prefix with semicolon 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 39
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 39
+    children:
+      - type: "citation"
+        begin: 0
+        end: 39
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 38
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 13
+            contentsBegin: 6
+            contentsEnd: 12
+            children:
+              - type: "citation-key"
+                key: "hello"
+          - type: "citation-reference"
+            key: "world"
+            begin: 13
+            end: 38
+            contentsBegin: 13
+            contentsEnd: 38
+            children:
+              - type: "citation-prefix"
+                contentsBegin: 13
+                contentsEnd: 32
+                children:
+                  - type: "text"
+                    value: " prefix; continues "
+              - type: "citation-key"
+                key: "world"
+`;
+
+exports[`org/parser citations reference suffix 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 18
+    children:
+      - type: "citation"
+        begin: 0
+        end: 18
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 17
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 17
+            contentsBegin: 6
+            contentsEnd: 17
+            children:
+              - type: "citation-key"
+                key: "hello"
+              - type: "citation-suffix"
+                contentsBegin: 12
+                contentsEnd: 17
+                children:
+                  - type: "text"
+                    value: " p.13"
+`;
+
+exports[`org/parser citations rich common prefix 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "citation"
+        begin: 0
+        end: 20
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 19
+        children:
+          - type: "citation-common-prefix"
+            contentsBegin: 6
+            contentsEnd: 12
+            children:
+              - type: "bold"
+                contentsBegin: 7
+                contentsEnd: 11
+                children:
+                  - type: "text"
+                    value: "bold"
+          - type: "citation-reference"
+            key: "hello"
+            begin: 13
+            end: 19
+            contentsBegin: 13
+            contentsEnd: 19
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations simple citation 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 13
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 13
+    children:
+      - type: "citation"
+        begin: 0
+        end: 13
+        prefix: null
+        suffix: null
+        contentsBegin: 6
+        contentsEnd: 12
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 6
+            end: 12
+            contentsBegin: 6
+            contentsEnd: 12
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations simple with style 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 15
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 15
+    children:
+      - type: "citation"
+        style: "s"
+        begin: 0
+        end: 15
+        prefix: null
+        suffix: null
+        contentsBegin: 8
+        contentsEnd: 14
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 8
+            end: 14
+            contentsBegin: 8
+            contentsEnd: 14
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser citations simple with style and variant 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 17
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 17
+    children:
+      - type: "citation"
+        style: "s/v"
+        begin: 0
+        end: 17
+        prefix: null
+        suffix: null
+        contentsBegin: 10
+        contentsEnd: 16
+        children:
+          - type: "citation-reference"
+            key: "hello"
+            begin: 10
+            end: 16
+            contentsBegin: 10
+            contentsEnd: 16
+            children:
+              - type: "citation-key"
+                key: "hello"
+`;
+
+exports[`org/parser clock clock in progress 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "clock"
+    value:
+      type: "timestamp"
+      timestampType: "inactive"
+      rawValue: "[2021-01-10 Sun 14:36]"
+      start:
+        year: 2021
+        month: 1
+        day: 10
+        hour: 14
+        minute: 36
+      end: null
+    duration: null
+    status: "running"
+`;
+
+exports[`org/parser clock finished clock 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 62
+children:
+  - type: "clock"
+    value:
+      type: "timestamp"
+      timestampType: "inactive-range"
+      rawValue: "[2020-12-22 Tue 09:07]--[2020-12-22 Tue 11:10]"
+      start:
+        year: 2020
+        month: 12
+        day: 22
+        hour: 9
+        minute: 7
+      end:
+        year: 2020
+        month: 12
+        day: 22
+        hour: 11
+        minute: 10
+    duration: "2:03"
+    status: "closed"
+`;
+
+exports[`org/parser comments does not eat keyword 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 32
+children:
+  - type: "comment"
+    value: "this is comment"
+  - type: "keyword"
+    affiliated: {}
+    key: "TITLE"
+    value: "hello"
+`;
+
+exports[`org/parser comments empty comment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 1
+children:
+  - type: "comment"
+    value: ""
+`;
+
+exports[`org/parser comments multi-line comment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 60
+children:
+  - type: "comment"
+    value: "first line\\nsecond\\nthird\\nfourth"
+`;
+
+exports[`org/parser comments no comments in list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 1
+    contentsEnd: 30
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 30
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 19
+            children:
+              - type: "text"
+                value: "# not a comment\\n"
+          - type: "comment"
+            value: "comment"
+`;
+
+exports[`org/parser comments single-line comment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 17
+children:
+  - type: "comment"
+    value: "this is comment"
+`;
+
+exports[`org/parser complete drawer after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 1
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "drawer"
+    affiliated: {}
+    name: "DRAWER"
+    contentsBegin: 16
+    contentsEnd: 22
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 16
+        contentsEnd: 22
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser complete lowercase drawer after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 1
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "drawer"
+    affiliated: {}
+    name: "drawer"
+    contentsBegin: 16
+    contentsEnd: 22
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 16
+        contentsEnd: 22
+        children:
+          - type: "text"
+            value: "hello\\n"
+`;
+
+exports[`org/parser custom drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "drawer"
+    affiliated: {}
+    name: "MYDRAWER"
+    contentsBegin: 11
+    contentsEnd: 25
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 11
+        contentsEnd: 25
+        children:
+          - type: "text"
+            value: "hello "
+          - type: "italic"
+            contentsBegin: 18
+            contentsEnd: 23
+            children:
+              - type: "text"
+                value: "there"
+`;
+
+exports[`org/parser diary sexp 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 65
+children:
+  - type: "diary-sexp"
+    affiliated: {}
+    value: "%%(diary-anniversary 10 31 1948) Arthur's birthday (%d years old)"
+`;
+
+exports[`org/parser diary sexp with newline following 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 24
+children:
+  - type: "diary-sexp"
+    affiliated: {}
+    value: "%%(diary-anniversaries)"
+`;
+
+exports[`org/parser dual keyword inside paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 33
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 33
+    children:
+      - type: "text"
+        value: "hello\\n#+RESULTS[hi]: hello\\nthere\\n"
+`;
+
+exports[`org/parser emphasis marks C++ accidental strike-through 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "C++ blah C++"
+`;
+
+exports[`org/parser emphasis marks bold 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "bold"
+        contentsBegin: 1
+        contentsEnd: 6
+        children:
+          - type: "text"
+            value: "hello"
+`;
+
+exports[`org/parser emphasis marks emphasis 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 49
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 49
+    children:
+      - type: "italic"
+        contentsBegin: 1
+        contentsEnd: 9
+        children:
+          - type: "text"
+            value: "Consider"
+      - type: "text"
+        value: " "
+      - type: "code"
+        value: "t*h*e"
+        children: []
+      - type: "text"
+        value: " "
+      - type: "bold"
+        contentsBegin: 20
+        contentsEnd: 29
+        children:
+          - type: "text"
+            value: "following"
+      - type: "text"
+        value: " "
+      - type: "verbatim"
+        value: "example"
+        children: []
+      - type: "text"
+        value: " "
+      - type: "strike-through"
+        contentsBegin: 42
+        contentsEnd: 48
+        children:
+          - type: "text"
+            value: "strike"
+`;
+
+exports[`org/parser emphasis marks emphasis boundaries 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 29
+    children:
+      - type: "text"
+        value: "a/a/ b*b* c~c~ d=d= e+e+ f"
+      - type: "subscript"
+        contentsBegin: 27
+        contentsEnd: 28
+        children:
+          - type: "text"
+            value: "f"
+      - type: "text"
+        value: "_"
+`;
+
+exports[`org/parser emphasis marks hanging / 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 13
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 13
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 13
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 13
+            children:
+              - type: "text"
+                value: "hello/other"
+`;
+
+exports[`org/parser empty document 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 0
+children: []
+`;
+
+exports[`org/parser entity 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "entity"
+        useBrackets: false
+        name: "Agrave"
+        latex: "\\\\\`{A}"
+        requireLatexMath: false
+        html: "&Agrave;"
+        ascii: "A"
+        latin1: "À"
+        utf8: "À"
+`;
+
+exports[`org/parser entity in parentheses 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 6
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "("
+      - type: "entity"
+        useBrackets: false
+        name: "leq"
+        latex: "\\\\le"
+        requireLatexMath: true
+        html: "&le;"
+        ascii: "<="
+        latin1: "<="
+        utf8: "≤"
+      - type: "text"
+        value: ")"
+`;
+
+exports[`org/parser export-snippet fake export snippet, missing backend 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "@@<b>@@"
+`;
+
+exports[`org/parser export-snippet html export snippet 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 38
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 38
+    children:
+      - type: "export-snippet"
+        backEnd: "html"
+        value: "<b>"
+      - type: "text"
+        value: "hello, world!"
+      - type: "export-snippet"
+        backEnd: "html"
+        value: "</b>"
+`;
+
+exports[`org/parser export-snippet incomplete export snippet 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 27
+    children:
+      - type: "text"
+        value: "@@html:fake export snippet@"
+`;
+
+exports[`org/parser fake keyword 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "#+ title: hi"
+`;
+
+exports[`org/parser fake multiline fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "text"
+        value: "hello $2\\n2\\n2\\n2 world"
+`;
+
+exports[`org/parser file property drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 66
+children:
+  - type: "property-drawer"
+    contentsBegin: 13
+    contentsEnd: 61
+    children:
+      - type: "node-property"
+        key: "ID"
+        value: "01c7615e-d792-4d06-995b-19a2c046c055"
+`;
+
+exports[`org/parser fixed-width empty fixed-width 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 1
+children:
+  - type: "fixed-width"
+    affiliated: {}
+    value: ""
+`;
+
+exports[`org/parser fixed-width multi-line fixed-width 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 17
+children:
+  - type: "fixed-width"
+    affiliated: {}
+    value: "hello\\n  world"
+`;
+
+exports[`org/parser fixed-width single-line fixed-width 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "fixed-width"
+    affiliated: {}
+    value: "hello"
+`;
+
+exports[`org/parser footnote definition footnote definition splits paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "1"
+    contentsBegin: 13
+    contentsEnd: 18
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 13
+        contentsEnd: 18
+        children:
+          - type: "text"
+            value: "hello"
+`;
+
+exports[`org/parser footnote definition footnote definition with : following 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 16
+children:
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "1"
+    contentsBegin: 6
+    contentsEnd: 16
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 6
+        contentsEnd: 16
+        children:
+          - type: "text"
+            value: ": footnote"
+`;
+
+exports[`org/parser footnote definition paragraph split 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "hello"
+    contentsBegin: 12
+    contentsEnd: 18
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 12
+        contentsEnd: 18
+        children:
+          - type: "text"
+            value: "hello\\n"
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 20
+    contentsEnd: 34
+    children:
+      - type: "text"
+        value: "next paragraph"
+`;
+
+exports[`org/parser footnote definition sequential 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 39
+children:
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "hello"
+    contentsBegin: 12
+    contentsEnd: 22
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 12
+        contentsEnd: 22
+        children:
+          - type: "text"
+            value: "footnote1\\n"
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "2"
+    contentsBegin: 29
+    contentsEnd: 39
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 29
+        contentsEnd: 39
+        children:
+          - type: "text"
+            value: "footnote2\\n"
+`;
+
+exports[`org/parser footnote definition sequential with affiliated keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 61
+children:
+  - type: "footnote-definition"
+    affiliated:
+      NAME: "f1"
+    label: "hello"
+    contentsBegin: 23
+    contentsEnd: 33
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 23
+        contentsEnd: 33
+        children:
+          - type: "text"
+            value: "footnote1\\n"
+  - type: "footnote-definition"
+    affiliated:
+      NAME: "f2"
+    label: "2"
+    contentsBegin: 51
+    contentsEnd: 61
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 51
+        contentsEnd: 61
+        children:
+          - type: "text"
+            value: "footnote2\\n"
+`;
+
+exports[`org/parser footnote definition simple 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 40
+children:
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "hello"
+    contentsBegin: 12
+    contentsEnd: 40
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 12
+        contentsEnd: 40
+        children:
+          - type: "text"
+            value: "this is footnote definition\\n"
+`;
+
+exports[`org/parser footnote definition starting on next line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 21
+children:
+  - type: "footnote-definition"
+    affiliated: {}
+    label: "hello"
+    contentsBegin: 12
+    contentsEnd: 21
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 12
+        contentsEnd: 21
+        children:
+          - type: "text"
+            value: "footnote\\n"
+`;
+
+exports[`org/parser footnote-reference inline reference 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 48
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 48
+    children:
+      - type: "text"
+        value: "hello"
+      - type: "footnote-reference"
+        label: null
+        footnoteType: "inline"
+        contentsBegin: 10
+        contentsEnd: 47
+        children:
+          - type: "text"
+            value: " this is inline "
+          - type: "italic"
+            contentsBegin: 27
+            contentsEnd: 35
+            children:
+              - type: "text"
+                value: "footnote"
+          - type: "text"
+            value: " definition"
+`;
+
+exports[`org/parser footnote-reference named inline reference 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 52
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 52
+    children:
+      - type: "text"
+        value: "hello"
+      - type: "footnote-reference"
+        label: "name"
+        footnoteType: "inline"
+        contentsBegin: 14
+        contentsEnd: 51
+        children:
+          - type: "text"
+            value: " this is inline "
+          - type: "italic"
+            contentsBegin: 31
+            contentsEnd: 39
+            children:
+              - type: "text"
+                value: "footnote"
+          - type: "text"
+            value: " definition"
+`;
+
+exports[`org/parser footnote-reference standard reference 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "text"
+        value: "hello"
+      - type: "footnote-reference"
+        label: "1"
+        footnoteType: "standard"
+        children: []
+`;
+
+exports[`org/parser headline DONE from next line should not capture first headline 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 31
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 14
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "Headline 1"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 12
+        children:
+          - type: "text"
+            value: "Headline 1"
+  - type: "section"
+    contentsBegin: 14
+    contentsEnd: 31
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "DONE"
+        priority: null
+        commented: false
+        rawValue: "Headline 2"
+        tags: []
+        contentsBegin: 21
+        contentsEnd: 31
+        children:
+          - type: "text"
+            value: "Headline 2"
+`;
+
+exports[`org/parser headline complex headline + newline 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 56
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 56
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: true
+        rawValue: "headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 20
+        contentsEnd: 43
+        children:
+          - type: "text"
+            value: "headline "
+          - type: "italic"
+            contentsBegin: 30
+            contentsEnd: 36
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline complex headline 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 55
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 55
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: true
+        rawValue: "headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 20
+        contentsEnd: 43
+        children:
+          - type: "text"
+            value: "headline "
+          - type: "italic"
+            contentsBegin: 30
+            contentsEnd: 36
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline custom todo keywords 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 29
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "NEXT"
+        priority: null
+        commented: false
+        rawValue: "my custom todo keyword"
+        tags: []
+        contentsBegin: 7
+        contentsEnd: 29
+        children:
+          - type: "text"
+            value: "my custom todo keyword"
+`;
+
+exports[`org/parser headline multiple headlines 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 22
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 8
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "Hello"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 7
+        children:
+          - type: "text"
+            value: "Hello"
+  - type: "section"
+    contentsBegin: 8
+    contentsEnd: 16
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "World"
+        tags: []
+        contentsBegin: 10
+        contentsEnd: 15
+        children:
+          - type: "text"
+            value: "World"
+  - type: "section"
+    contentsBegin: 16
+    contentsEnd: 22
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "blah"
+        tags: []
+        contentsBegin: 18
+        contentsEnd: 22
+        children:
+          - type: "text"
+            value: "blah"
+`;
+
+exports[`org/parser headline nested headlines 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 36
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 22
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "hi"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "hi"
+      - type: "section"
+        contentsBegin: 5
+        contentsEnd: 22
+        children:
+          - type: "headline"
+            level: 2
+            todoKeyword: null
+            priority: null
+            commented: false
+            rawValue: "there"
+            tags: []
+            contentsBegin: 8
+            contentsEnd: 13
+            children:
+              - type: "text"
+                value: "there"
+          - type: "section"
+            contentsBegin: 14
+            contentsEnd: 22
+            children:
+              - type: "headline"
+                level: 3
+                todoKeyword: null
+                priority: null
+                commented: false
+                rawValue: "how"
+                tags: []
+                contentsBegin: 18
+                contentsEnd: 21
+                children:
+                  - type: "text"
+                    value: "how"
+  - type: "section"
+    contentsBegin: 22
+    contentsEnd: 36
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "are"
+        tags: []
+        contentsBegin: 24
+        contentsEnd: 27
+        children:
+          - type: "text"
+            value: "are"
+      - type: "section"
+        contentsBegin: 28
+        contentsEnd: 36
+        children:
+          - type: "headline"
+            level: 3
+            todoKeyword: null
+            priority: null
+            commented: false
+            rawValue: "you"
+            tags: []
+            contentsBegin: 32
+            contentsEnd: 35
+            children:
+              - type: "text"
+                value: "you"
+`;
+
+exports[`org/parser headline single headline 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "Hello"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 7
+        children:
+          - type: "text"
+            value: "Hello"
+`;
+
+exports[`org/parser headline statistics-cookie complex headline with defined fraction statistics-cookie 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 61
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 61
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: false
+        rawValue: "[1/2] COMMENT headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 12
+        contentsEnd: 49
+        children:
+          - type: "statistics-cookie"
+            begin: 12
+            end: 17
+            value: "[1/2]"
+            postBlank: 1
+          - type: "text"
+            value: "COMMENT headline "
+          - type: "italic"
+            contentsBegin: 36
+            contentsEnd: 42
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline statistics-cookie complex headline with defined fraction statistics-cookie 2`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 61
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 61
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: true
+        rawValue: "headline /italic/ title :some:tags: [1/3]"
+        tags: []
+        contentsBegin: 20
+        contentsEnd: 61
+        children:
+          - type: "text"
+            value: "headline "
+          - type: "italic"
+            contentsBegin: 30
+            contentsEnd: 36
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title :some:tags: "
+          - type: "statistics-cookie"
+            begin: 56
+            end: 61
+            value: "[1/3]"
+            postBlank: 0
+`;
+
+exports[`org/parser headline statistics-cookie complex headline with defined percentage statistics-cookie 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 61
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 61
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: false
+        rawValue: "[50%] COMMENT headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 12
+        contentsEnd: 49
+        children:
+          - type: "statistics-cookie"
+            begin: 12
+            end: 17
+            value: "[50%]"
+            postBlank: 1
+          - type: "text"
+            value: "COMMENT headline "
+          - type: "italic"
+            contentsBegin: 36
+            contentsEnd: 42
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline statistics-cookie complex headline with empty fraction statistics-cookie 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 59
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 59
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: false
+        rawValue: "[/] COMMENT headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 12
+        contentsEnd: 47
+        children:
+          - type: "statistics-cookie"
+            begin: 12
+            end: 15
+            value: "[/]"
+            postBlank: 1
+          - type: "text"
+            value: "COMMENT headline "
+          - type: "italic"
+            contentsBegin: 34
+            contentsEnd: 40
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline statistics-cookie complex headline with empty percentage statistics-cookie 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 59
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 59
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: "TODO"
+        priority: "A"
+        commented: false
+        rawValue: "[%] COMMENT headline /italic/ title"
+        tags:
+          - "some"
+          - "tags"
+        contentsBegin: 12
+        contentsEnd: 47
+        children:
+          - type: "statistics-cookie"
+            begin: 12
+            end: 15
+            value: "[%]"
+            postBlank: 1
+          - type: "text"
+            value: "COMMENT headline "
+          - type: "italic"
+            contentsBegin: 34
+            contentsEnd: 40
+            children:
+              - type: "text"
+                value: "italic"
+          - type: "text"
+            value: " title"
+`;
+
+exports[`org/parser headline statistics-cookie headline starting with fraction statistics-cookie 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 19
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 19
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "[1/100] Something"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 19
+        children:
+          - type: "statistics-cookie"
+            begin: 2
+            end: 9
+            value: "[1/100]"
+            postBlank: 1
+          - type: "text"
+            value: "Something"
+`;
+
+exports[`org/parser headline statistics-cookie non-ascii characters in headline tags 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 21
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 21
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags:
+          - "hello"
+          - "你好"
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+`;
+
+exports[`org/parser headline statistics-cookie statistics cookie with long trailing space 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 14
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 14
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "[/]    hello"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 14
+        children:
+          - type: "statistics-cookie"
+            begin: 2
+            end: 5
+            value: "[/]"
+            postBlank: 4
+          - type: "text"
+            value: "hello"
+`;
+
+exports[`org/parser headline statistics-cookie statistics cookie without trailing space 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 10
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 10
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "[/]hello"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "statistics-cookie"
+            begin: 2
+            end: 5
+            value: "[/]"
+            postBlank: 0
+          - type: "text"
+            value: "hello"
+`;
+
+exports[`org/parser horizontal rule 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "horizontal-rule"
+    affiliated: {}
+`;
+
+exports[`org/parser horizontal rule between paragraphs (#11) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 19
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "Hello\\n"
+  - type: "horizontal-rule"
+    affiliated: {}
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 14
+    contentsEnd: 19
+    children:
+      - type: "text"
+        value: "World"
+`;
+
+exports[`org/parser incomplete drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 27
+    children:
+      - type: "text"
+        value: ":NONDRAWER:\\nI have no :END:"
+`;
+
+exports[`org/parser incomplete drawer after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 24
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 1
+    contentsEnd: 24
+    children:
+      - type: "text"
+        value: "hello\\n:NONDRAWER:\\nhello"
+`;
+
+exports[`org/parser keyword 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "keyword"
+    affiliated: {}
+    key: "TITLE"
+    value: "hi"
+`;
+
+exports[`org/parser latex environment environment with star 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 40
+children:
+  - type: "latex-environment"
+    affiliated: {}
+    value: "\\\\begin{equation*}
+
+      blah
+
+      \\\\end{equation*}"
+`;
+
+exports[`org/parser latex environment incomplete latex environment after paragraph (two lines) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 41
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 41
+    children:
+      - type: "text"
+        value: "hello\\nthere\\n"
+      - type: "latex-fragment"
+        value: "\\\\begin{hello}"
+        contents: "\\\\begin{hello}"
+      - type: "text"
+        value: "\\nI am incomplete"
+`;
+
+exports[`org/parser latex environment incomplete latex environment after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 35
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 35
+    children:
+      - type: "text"
+        value: "hello\\n"
+      - type: "latex-fragment"
+        value: "\\\\begin{hello}"
+        contents: "\\\\begin{hello}"
+      - type: "text"
+        value: "\\nI am incomplete"
+`;
+
+exports[`org/parser latex environment latex environment after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 37
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "latex-environment"
+    affiliated: {}
+    value: "\\\\begin{hello} there \\\\end{hello}"
+`;
+
+exports[`org/parser latex environment multi-line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 35
+children:
+  - type: "latex-environment"
+    affiliated: {}
+    value: "\\\\begin{hello}
+
+      some text
+
+      \\\\end{hello}"
+`;
+
+exports[`org/parser latex-fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 98
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 98
+    children:
+      - type: "text"
+        value: "If "
+      - type: "latex-fragment"
+        value: "$a^2=b$"
+        contents: "a^2=b"
+      - type: "text"
+        value: " and "
+      - type: "latex-fragment"
+        value: "\\\\( b=2 \\\\)"
+        contents: " b=2 "
+      - type: "text"
+        value: ", then the solution must be\\neither "
+      - type: "latex-fragment"
+        value: "$$ a=+\\\\sqrt{2} $$"
+        contents: " a=+\\\\sqrt{2} "
+      - type: "text"
+        value: " or "
+      - type: "latex-fragment"
+        value: "\\\\[ a=-\\\\sqrt{2} \\\\]"
+        contents: " a=-\\\\sqrt{2} "
+      - type: "text"
+        value: "."
+`;
+
+exports[`org/parser line-break fake line break (must be at end of line) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 27
+    children:
+      - type: "text"
+        value: "some text\\\\"
+      - type: "entity"
+        useBrackets: false
+        name: "not"
+        latex: "\\\\textlnot{}"
+        requireLatexMath: false
+        html: "&not;"
+        ascii: "[angled dash]"
+        latin1: "¬"
+        utf8: "¬"
+      - type: "text"
+        value: " a line break"
+`;
+
+exports[`org/parser line-break fake line break (triple backslash) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 26
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 26
+    children:
+      - type: "text"
+        value: "some text\\\\\\\\\\\\\\nnot next line"
+`;
+
+exports[`org/parser line-break valid line break 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 22
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 22
+    children:
+      - type: "text"
+        value: "some text"
+      - type: "line-break"
+      - type: "text"
+        value: "line break"
+`;
+
+exports[`org/parser line-break whitespace after \\\\ 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 24
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 24
+    children:
+      - type: "text"
+        value: "some text"
+      - type: "line-break"
+      - type: "text"
+        value: "line break"
+`;
+
+exports[`org/parser links ./ as start of file link 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 14
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 14
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "file"
+        rawLink: "./file.org"
+        path: "./file.org"
+        children: []
+`;
+
+exports[`org/parser links angle link 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "link"
+        format: "angle"
+        linkType: "http"
+        rawLink: "http://example.com"
+        path: "//example.com"
+        children: []
+`;
+
+exports[`org/parser links file link with percents 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 30
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "file"
+        rawLink: "./file%2Bwith%2Bspaces.org"
+        path: "./file%2Bwith%2Bspaces.org"
+        children: []
+`;
+
+exports[`org/parser links file link with spaces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 26
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 26
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "file"
+        rawLink: "./file with spaces.org"
+        path: "./file with spaces.org"
+        children: []
+`;
+
+exports[`org/parser links https link 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 29
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "https"
+        rawLink: "https://example.com/hello"
+        path: "//example.com/hello"
+        children: []
+`;
+
+exports[`org/parser links link 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 18
+    children:
+      - type: "link"
+        format: "plain"
+        linkType: "http"
+        rawLink: "http://example.com"
+        path: "//example.com"
+        children: []
+`;
+
+exports[`org/parser links link after text 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 24
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 24
+    children:
+      - type: "text"
+        value: "some text "
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "link"
+        path: "link"
+        contentsBegin: 18
+        contentsEnd: 22
+        children:
+          - type: "text"
+            value: "text"
+`;
+
+exports[`org/parser links link mixed with text 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 29
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 29
+    children:
+      - type: "text"
+        value: "hello "
+      - type: "link"
+        format: "plain"
+        linkType: "http"
+        rawLink: "http://example.com"
+        path: "//example.com"
+        children: []
+      - type: "text"
+        value: " blah"
+`;
+
+exports[`org/parser links link with no text 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 8
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 8
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "link"
+        path: "link"
+        children: []
+`;
+
+exports[`org/parser links multiline description 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 34
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "www.something.com"
+        path: "www.something.com"
+        contentsBegin: 21
+        contentsEnd: 32
+        children:
+          - type: "text"
+            value: "line1\\nline2"
+`;
+
+exports[`org/parser links plain link does not include trailing punctuation 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "Example: "
+      - type: "link"
+        format: "plain"
+        linkType: "http"
+        rawLink: "http://example.com"
+        path: "//example.com"
+        children: []
+      - type: "text"
+        value: "."
+`;
+
+exports[`org/parser links regular link 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 14
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 14
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "link"
+        path: "link"
+        contentsBegin: 8
+        contentsEnd: 12
+        children:
+          - type: "text"
+            value: "text"
+`;
+
+exports[`org/parser links regular link with longer link slash 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 18
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "longlink"
+        path: "longlink"
+        contentsBegin: 12
+        contentsEnd: 16
+        children:
+          - type: "text"
+            value: "text"
+`;
+
+exports[`org/parser links two links in one line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 34
+    children:
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "link1"
+        path: "link1"
+        contentsBegin: 9
+        contentsEnd: 14
+        children:
+          - type: "text"
+            value: "text1"
+      - type: "text"
+        value: " "
+      - type: "link"
+        format: "bracket"
+        linkType: "fuzzy"
+        rawLink: "link2"
+        path: "link2"
+        contentsBegin: 26
+        contentsEnd: 31
+        children:
+          - type: "text"
+            value: "text2"
+`;
+
+exports[`org/parser list checkbox item [ ] 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 14
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 14
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: "off"
+        contentsBegin: 6
+        contentsEnd: 14
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 6
+            contentsEnd: 14
+            children:
+              - type: "text"
+                value: "not done"
+`;
+
+exports[`org/parser list checkbox item [-] 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 15
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 15
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: "trans"
+        contentsBegin: 6
+        contentsEnd: 15
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 6
+            contentsEnd: 15
+            children:
+              - type: "text"
+                value: "half-done"
+`;
+
+exports[`org/parser list checkbox item [X] 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 10
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 10
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: "on"
+        contentsBegin: 6
+        contentsEnd: 10
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 6
+            contentsEnd: 10
+            children:
+              - type: "text"
+                value: "done"
+`;
+
+exports[`org/parser list checkbox item [x] 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 10
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 10
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: "on"
+        contentsBegin: 6
+        contentsEnd: 10
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 6
+            contentsEnd: 10
+            children:
+              - type: "text"
+                value: "done"
+`;
+
+exports[`org/parser list description list > skips trailing spaces after tag 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 24
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "descriptive"
+    contentsBegin: 0
+    contentsEnd: 24
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 13
+        contentsEnd: 24
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "text"
+                value: "term"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 13
+            contentsEnd: 24
+            children:
+              - type: "text"
+                value: "description"
+`;
+
+exports[`org/parser list description list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 50
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "descriptive"
+    contentsBegin: 0
+    contentsEnd: 50
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 11
+        contentsEnd: 25
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "text"
+                value: "term1"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 11
+            contentsEnd: 25
+            children:
+              - type: "text"
+                value: "description 1\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 37
+        contentsEnd: 50
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "text"
+                value: "term 2"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 37
+            contentsEnd: 50
+            children:
+              - type: "text"
+                value: "description 2"
+`;
+
+exports[`org/parser list empty line between list items 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 18
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 9
+            children:
+              - type: "text"
+                value: "item 1\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 12
+        contentsEnd: 18
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 12
+            contentsEnd: 18
+            children:
+              - type: "text"
+                value: "item 2"
+`;
+
+exports[`org/parser list fake list numbers 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 9
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 9
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 9
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 9
+            children:
+              - type: "text"
+                value: "1. blah"
+`;
+
+exports[`org/parser list formatting in description list tags 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 389
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "descriptive"
+    contentsBegin: 1
+    contentsEnd: 389
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 39
+        contentsEnd: 52
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "link"
+                format: "bracket"
+                linkType: "https"
+                rawLink: "https://example.com"
+                path: "//example.com"
+                contentsBegin: 26
+                contentsEnd: 33
+                children:
+                  - type: "text"
+                    value: "Example"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 39
+            contentsEnd: 52
+            children:
+              - type: "text"
+                value: "Hello there!\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 88
+        contentsEnd: 128
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "link"
+                format: "bracket"
+                linkType: "https"
+                rawLink: "https://github.com"
+                path: "//github.com"
+                contentsBegin: 76
+                contentsEnd: 82
+                children:
+                  - type: "text"
+                    value: "GitHub"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 88
+            contentsEnd: 128
+            children:
+              - type: "text"
+                value: "This is GitHub, your hub for Git repos.\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 142
+        contentsEnd: 164
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "bold"
+                contentsBegin: 131
+                contentsEnd: 137
+                children:
+                  - type: "text"
+                    value: "Gitlab"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 142
+            contentsEnd: 164
+            children:
+              - type: "text"
+                value: "Alternative to GitHub\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 181
+        contentsEnd: 254
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "italic"
+                contentsBegin: 167
+                contentsEnd: 176
+                children:
+                  - type: "text"
+                    value: "Sourcehut"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 181
+            contentsEnd: 254
+            children:
+              - type: "text"
+                value: "Another alternative to GitHub that primarily uses email-based
+                  workflows.\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 270
+        contentsEnd: 292
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "italic"
+                contentsBegin: 257
+                contentsEnd: 265
+                children:
+                  - type: "text"
+                    value: "Codeberg"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 270
+            contentsEnd: 292
+            children:
+              - type: "bold"
+                contentsBegin: 271
+                contentsEnd: 290
+                children:
+                  - type: "text"
+                    value: "ANOTHER ALTERNATIVE"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 325
+        contentsEnd: 389
+        children:
+          - type: "list-item-tag"
+            children:
+              - type: "italic"
+                contentsBegin: 295
+                contentsEnd: 320
+                children:
+                  - type: "bold"
+                    contentsBegin: 296
+                    contentsEnd: 319
+                    children:
+                      - type: "text"
+                        value: "self-hosting Git server"
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 325
+            contentsEnd: 389
+            children:
+              - type: "italic"
+                contentsBegin: 326
+                contentsEnd: 387
+                children:
+                  - type: "bold"
+                    contentsBegin: 327
+                    contentsEnd: 386
+                    children:
+                      - type: "text"
+                        value: "The ultimate Git solution for privacy-oriented individuals!"
+`;
+
+exports[`org/parser list list after paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 6
+    contentsEnd: 12
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 8
+        contentsEnd: 12
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 8
+            contentsEnd: 12
+            children:
+              - type: "text"
+                value: "list"
+`;
+
+exports[`org/parser list list inside quite inside list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 50
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 1
+    contentsEnd: 50
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 50
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 10
+            children:
+              - type: "text"
+                value: "list 1\\n"
+          - type: "quote-block"
+            affiliated: {}
+            contentsBegin: 26
+            contentsEnd: 37
+            children:
+              - type: "plain-list"
+                affiliated: {}
+                indent: 2
+                listType: "unordered"
+                contentsBegin: 26
+                contentsEnd: 37
+                children:
+                  - type: "list-item"
+                    indent: 2
+                    bullet: "- "
+                    counter: null
+                    checkbox: null
+                    contentsBegin: 30
+                    contentsEnd: 37
+                    children:
+                      - type: "paragraph"
+                        affiliated: {}
+                        contentsBegin: 30
+                        contentsEnd: 37
+                        children:
+                          - type: "text"
+                            value: "list 2\\n"
+`;
+
+exports[`org/parser list long blocks in lists 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 46
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 1
+    contentsEnd: 46
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 46
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 8
+            children:
+              - type: "text"
+                value: "list\\n"
+          - type: "src-block"
+            affiliated: {}
+            language: "c"
+            switches: null
+            parameters: null
+            value: "  x\\n\\n\\n  y\\n"
+`;
+
+exports[`org/parser list long drawer in list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 37
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 1
+    contentsEnd: 37
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 37
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 8
+            children:
+              - type: "text"
+                value: "list\\n"
+          - type: "drawer"
+            affiliated: {}
+            name: "DRAWER"
+            contentsBegin: 19
+            contentsEnd: 29
+            children:
+              - type: "paragraph"
+                affiliated: {}
+                contentsBegin: 19
+                contentsEnd: 23
+                children:
+                  - type: "text"
+                    value: "  x\\n"
+              - type: "paragraph"
+                affiliated: {}
+                contentsBegin: 25
+                contentsEnd: 29
+                children:
+                  - type: "text"
+                    value: "  y\\n"
+`;
+
+exports[`org/parser list nested lists 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 27
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 27
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 27
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 8
+            children:
+              - type: "text"
+                value: "there\\n"
+          - type: "plain-list"
+            affiliated: {}
+            indent: 2
+            listType: "unordered"
+            contentsBegin: 8
+            contentsEnd: 27
+            children:
+              - type: "list-item"
+                indent: 2
+                bullet: "- "
+                counter: null
+                checkbox: null
+                contentsBegin: 12
+                contentsEnd: 19
+                children:
+                  - type: "paragraph"
+                    affiliated: {}
+                    contentsBegin: 12
+                    contentsEnd: 19
+                    children:
+                      - type: "text"
+                        value: "nested\\n"
+              - type: "list-item"
+                indent: 2
+                bullet: "- "
+                counter: null
+                checkbox: null
+                contentsBegin: 23
+                contentsEnd: 27
+                children:
+                  - type: "paragraph"
+                    affiliated: {}
+                    contentsBegin: 23
+                    contentsEnd: 27
+                    children:
+                      - type: "text"
+                        value: "list"
+`;
+
+exports[`org/parser list ordered list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 13
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "ordered"
+    contentsBegin: 0
+    contentsEnd: 13
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "1. "
+        counter: null
+        checkbox: null
+        contentsBegin: 3
+        contentsEnd: 7
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 3
+            contentsEnd: 7
+            children:
+              - type: "text"
+                value: "one\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "2. "
+        counter: null
+        checkbox: null
+        contentsBegin: 10
+        contentsEnd: 13
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 10
+            contentsEnd: 13
+            children:
+              - type: "text"
+                value: "two"
+`;
+
+exports[`org/parser list single-item list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 4
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 4
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 4
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 4
+            children:
+              - type: "text"
+                value: "hi"
+`;
+
+exports[`org/parser list two empty lines breaking list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 10
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 8
+            children:
+              - type: "text"
+                value: "list1\\n"
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 10
+    contentsEnd: 18
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 12
+        contentsEnd: 18
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 12
+            contentsEnd: 18
+            children:
+              - type: "text"
+                value: "list 2"
+`;
+
+exports[`org/parser list two-item list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 5
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 5
+            children:
+              - type: "text"
+                value: "hi\\n"
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 7
+        contentsEnd: 12
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 7
+            contentsEnd: 12
+            children:
+              - type: "text"
+                value: "there"
+`;
+
+exports[`org/parser lowercase custom drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 30
+children:
+  - type: "drawer"
+    affiliated: {}
+    name: "mydrawer"
+    contentsBegin: 11
+    contentsEnd: 25
+    children:
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 11
+        contentsEnd: 25
+        children:
+          - type: "text"
+            value: "hello "
+          - type: "italic"
+            contentsBegin: 18
+            contentsEnd: 23
+            children:
+              - type: "text"
+                value: "there"
+`;
+
+exports[`org/parser lowercase property drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 62
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 62
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "property-drawer"
+        contentsBegin: 24
+        contentsEnd: 57
+        children:
+          - type: "node-property"
+            key: "created"
+            value: "[2019-03-13 Wed 23:57]"
+`;
+
+exports[`org/parser multiline \\( \\) fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "latex-fragment"
+        value: "\\\\(2\\n2\\n2\\n2\\\\)"
+        contents: "2\\n2\\n2\\n2"
+`;
+
+exports[`org/parser multiline \\[ \\] fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "latex-fragment"
+        value: "\\\\[2\\n2\\n2\\n2\\\\]"
+        contents: "2\\n2\\n2\\n2"
+`;
+
+exports[`org/parser multiline latex fragment (3 lines) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 9
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 9
+    children:
+      - type: "latex-fragment"
+        value: "$$2\\n2\\n2$$"
+        contents: "2\\n2\\n2"
+`;
+
+exports[`org/parser multiline latex fragment (4 lines) 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "latex-fragment"
+        value: "$$2\\n2\\n2\\n2$$"
+        contents: "2\\n2\\n2\\n2"
+`;
+
+exports[`org/parser multiline latex fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 8
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 8
+    children:
+      - type: "latex-fragment"
+        value: "$$2+\\n2$$"
+        contents: "2+\\n2"
+`;
+
+exports[`org/parser multiline single-$ fragment 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 21
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 21
+    children:
+      - type: "text"
+        value: "hello "
+      - type: "latex-fragment"
+        value: "$2\\n2\\n2\\n2$"
+        contents: "2\\n2\\n2\\n2"
+      - type: "text"
+        value: " world"
+`;
+
+exports[`org/parser non-closing diary sexp 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 26
+children:
+  - type: "diary-sexp"
+    affiliated: {}
+    value: "%%(I am still a diary-sexp"
+`;
+
+exports[`org/parser non-dual keyword inside paragraph 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 25
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 25
+    children:
+      - type: "text"
+        value: "hello\\n#+BLAH[hi]: heh\\nhi\\n"
+`;
+
+exports[`org/parser options.useSubSuperscript = {} ignores subscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x_2"
+`;
+
+exports[`org/parser options.useSubSuperscript = {} ignores superscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x^2"
+`;
+
+exports[`org/parser options.useSubSuperscript = {} parses subscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser options.useSubSuperscript = {} parses superscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser options.useSubSuperscript = false ignores subscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x_{2}"
+`;
+
+exports[`org/parser options.useSubSuperscript = false ignores subscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x_2"
+`;
+
+exports[`org/parser options.useSubSuperscript = false ignores superscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x^{2}"
+`;
+
+exports[`org/parser options.useSubSuperscript = false ignores superscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x^2"
+`;
+
+exports[`org/parser options.useSubSuperscript = true parses subscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser options.useSubSuperscript = true parses subscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x"
+      - type: "subscript"
+        contentsBegin: 2
+        contentsEnd: 3
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser options.useSubSuperscript = true parses superscript with braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "x"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser options.useSubSuperscript = true parses superscript with number 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 3
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 3
+    children:
+      - type: "text"
+        value: "x"
+      - type: "superscript"
+        contentsBegin: 2
+        contentsEnd: 3
+        children:
+          - type: "text"
+            value: "2"
+`;
+
+exports[`org/parser paragraph split by empty line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 8
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "a1\\na2\\n"
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 7
+    contentsEnd: 8
+    children:
+      - type: "text"
+        value: "b"
+`;
+
+exports[`org/parser planning fake planning 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 18
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled: null
+        deadline: null
+        closed: null
+`;
+
+exports[`org/parser planning fake planning after property drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 72
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 72
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "property-drawer"
+        contentsBegin: 24
+        contentsEnd: 24
+        children: []
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 30
+        contentsEnd: 72
+        children:
+          - type: "text"
+            value: "CLOSED: "
+          - type: "timestamp"
+            timestampType: "inactive"
+            rawValue: "[2021-05-31 Mon]"
+            start:
+              year: 2021
+              month: 5
+              day: 31
+              hour: null
+              minute: null
+            end: null
+          - type: "text"
+            value: "\\nthis is paragraph"
+`;
+
+exports[`org/parser planning fake planning over multiple lines 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 81
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 81
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled: null
+        deadline: null
+        closed:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2021-05-31 Mon]"
+          start:
+            year: 2021
+            month: 5
+            day: 31
+            hour: null
+            minute: null
+          end: null
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 36
+        contentsEnd: 81
+        children:
+          - type: "text"
+            value: "SCHEDULED: "
+          - type: "timestamp"
+            timestampType: "inactive"
+            rawValue: "[2021-05-31 Mon]"
+            start:
+              year: 2021
+              month: 5
+              day: 31
+              hour: null
+              minute: null
+            end: null
+          - type: "text"
+            value: "\\nthis is paragraph"
+`;
+
+exports[`org/parser planning mixed good and fake planning 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 47
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 47
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2021-05-31 Mon]"
+          start:
+            year: 2021
+            month: 5
+            day: 31
+            hour: null
+            minute: null
+          end: null
+        deadline: null
+        closed: null
+`;
+
+exports[`org/parser planning normal planning 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 96
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 96
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2019-03-13 Wed]"
+          start:
+            year: 2019
+            month: 3
+            day: 13
+            hour: null
+            minute: null
+          end: null
+        deadline:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2019-03-14 Thu]"
+          start:
+            year: 2019
+            month: 3
+            day: 14
+            hour: null
+            minute: null
+          end: null
+        closed:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2019-03-13 Wed 23:48]"
+          start:
+            year: 2019
+            month: 3
+            day: 13
+            hour: 23
+            minute: 48
+          end: null
+`;
+
+exports[`org/parser planning paragraph after planning 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 53
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 53
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled: null
+        deadline: null
+        closed:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2021-05-31 Mon]"
+          start:
+            year: 2021
+            month: 5
+            day: 31
+            hour: null
+            minute: null
+          end: null
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 36
+        contentsEnd: 53
+        children:
+          - type: "text"
+            value: "this is paragraph"
+`;
+
+exports[`org/parser planning planning before property drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 72
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 72
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "planning"
+        scheduled: null
+        deadline: null
+        closed:
+          type: "timestamp"
+          timestampType: "inactive"
+          rawValue: "[2021-05-31 Mon]"
+          start:
+            year: 2021
+            month: 5
+            day: 31
+            hour: null
+            minute: null
+          end: null
+      - type: "property-drawer"
+        contentsBegin: 49
+        contentsEnd: 49
+        children: []
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 55
+        contentsEnd: 72
+        children:
+          - type: "text"
+            value: "this is paragraph"
+`;
+
+exports[`org/parser property drawer + section 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 68
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 68
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "property-drawer"
+        contentsBegin: 24
+        contentsEnd: 57
+        children:
+          - type: "node-property"
+            key: "CREATED"
+            value: "[2019-03-13 Wed 23:57]"
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 63
+        contentsEnd: 68
+        children:
+          - type: "text"
+            value: "hello"
+`;
+
+exports[`org/parser property drawer 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 62
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 62
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "headline"
+      - type: "property-drawer"
+        contentsBegin: 24
+        contentsEnd: 57
+        children:
+          - type: "node-property"
+            key: "CREATED"
+            value: "[2019-03-13 Wed 23:57]"
+`;
+
+exports[`org/parser section empty lines before first section 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 4
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 2
+    contentsEnd: 4
+    children:
+      - type: "text"
+        value: "hi"
+`;
+
+exports[`org/parser section first top-level headline after list 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 17
+children:
+  - type: "plain-list"
+    affiliated: {}
+    indent: 0
+    listType: "unordered"
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "list-item"
+        indent: 0
+        bullet: "- "
+        counter: null
+        checkbox: null
+        contentsBegin: 2
+        contentsEnd: 7
+        children:
+          - type: "paragraph"
+            affiliated: {}
+            contentsBegin: 2
+            contentsEnd: 7
+            children:
+              - type: "text"
+                value: "list\\n"
+  - type: "section"
+    contentsBegin: 7
+    contentsEnd: 17
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "headline"
+        tags: []
+        contentsBegin: 9
+        contentsEnd: 17
+        children:
+          - type: "text"
+            value: "headline"
+`;
+
+exports[`org/parser section initial section 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 10
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "hello\\n"
+  - type: "section"
+    contentsBegin: 6
+    contentsEnd: 10
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "hi"
+        tags: []
+        contentsBegin: 8
+        contentsEnd: 10
+        children:
+          - type: "text"
+            value: "hi"
+`;
+
+exports[`org/parser section section in headline 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 23
+children:
+  - type: "section"
+    contentsBegin: 0
+    contentsEnd: 23
+    children:
+      - type: "headline"
+        level: 1
+        todoKeyword: null
+        priority: null
+        commented: false
+        rawValue: "hello"
+        tags: []
+        contentsBegin: 2
+        contentsEnd: 7
+        children:
+          - type: "text"
+            value: "hello"
+      - type: "paragraph"
+        affiliated: {}
+        contentsBegin: 8
+        contentsEnd: 23
+        children:
+          - type: "text"
+            value: "this is section"
+`;
+
+exports[`org/parser section single-line section 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 2
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 2
+    children:
+      - type: "text"
+        value: "hi"
+`;
+
+exports[`org/parser single asterisk 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 18
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "text\\n"
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 5
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "*\\n"
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 8
+    contentsEnd: 18
+    children:
+      - type: "text"
+        value: "more text\\n"
+`;
+
+exports[`org/parser subscript after subscript 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 2
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "12"
+      - type: "subscript"
+        contentsBegin: 5
+        contentsEnd: 7
+        children:
+          - type: "text"
+            value: "22"
+`;
+
+exports[`org/parser subscript after superscript 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 2
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "12"
+      - type: "subscript"
+        contentsBegin: 5
+        contentsEnd: 7
+        children:
+          - type: "text"
+            value: "22"
+`;
+
+exports[`org/parser subscript braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "+"
+`;
+
+exports[`org/parser subscript multiple nesting groups 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 26
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 26
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 25
+        children:
+          - type: "text"
+            value: "hello{there}and{there}"
+`;
+
+exports[`org/parser subscript nested braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 6
+        children:
+          - type: "text"
+            value: "{x}"
+`;
+
+exports[`org/parser subscript nested braces, 3 levels 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 19
+        children:
+          - type: "text"
+            value: "hello{hi{there}}"
+`;
+
+exports[`org/parser subscript no superscript begginning of line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 6
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "_hello"
+`;
+
+exports[`org/parser subscript no superscript multiple 2-level nesting groups 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "H_{hello{there{}}and{there}}"
+`;
+
+exports[`org/parser subscript no superscript post whitespace 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "hello_ there"
+`;
+
+exports[`org/parser subscript no superscript pre whitespace 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "hello _there"
+`;
+
+exports[`org/parser subscript no superscript too many nested braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "H_{hello{hi{there{hello?}}}}"
+`;
+
+exports[`org/parser subscript no superscript unbalanced braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 6
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "H_{{+}"
+`;
+
+exports[`org/parser subscript simple 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "text"
+        value: "hello"
+      - type: "subscript"
+        contentsBegin: 6
+        contentsEnd: 11
+        children:
+          - type: "text"
+            value: "world"
+`;
+
+exports[`org/parser subscript spaces in braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 15
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 15
+    children:
+      - type: "text"
+        value: "H"
+      - type: "subscript"
+        contentsBegin: 3
+        contentsEnd: 14
+        children:
+          - type: "text"
+            value: "hello world"
+`;
+
+exports[`org/parser subscript trailing _ 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 4
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 4
+    children:
+      - type: "text"
+        value: "f"
+      - type: "subscript"
+        contentsBegin: 2
+        contentsEnd: 3
+        children:
+          - type: "text"
+            value: "f"
+      - type: "text"
+        value: "_"
+`;
+
+exports[`org/parser superscript braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 5
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 5
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 4
+        children:
+          - type: "text"
+            value: "+"
+`;
+
+exports[`org/parser superscript multiple nesting groups 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 26
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 26
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 25
+        children:
+          - type: "text"
+            value: "hello{there}and{there}"
+`;
+
+exports[`org/parser superscript nested braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 7
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 7
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 6
+        children:
+          - type: "text"
+            value: "{x}"
+`;
+
+exports[`org/parser superscript nested braces, 3 levels 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 20
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 20
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 19
+        children:
+          - type: "text"
+            value: "hello{hi{there}}"
+`;
+
+exports[`org/parser superscript no superscript begginning of line 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 6
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "^hello"
+`;
+
+exports[`org/parser superscript no superscript multiple 2-level nesting groups 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "H^{hello{there{}}and{there}}"
+`;
+
+exports[`org/parser superscript no superscript post whitespace 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "hello^ there"
+`;
+
+exports[`org/parser superscript no superscript pre whitespace 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "text"
+        value: "hello ^there"
+`;
+
+exports[`org/parser superscript no superscript too many nested braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "text"
+        value: "H^{hello{hi{there{hello?}}}}"
+`;
+
+exports[`org/parser superscript no superscript unbalanced braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 6
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 6
+    children:
+      - type: "text"
+        value: "H^{{+}"
+`;
+
+exports[`org/parser superscript simple 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 11
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 11
+    children:
+      - type: "text"
+        value: "hello"
+      - type: "superscript"
+        contentsBegin: 6
+        contentsEnd: 11
+        children:
+          - type: "text"
+            value: "world"
+`;
+
+exports[`org/parser superscript spaces in braces 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 15
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 15
+    children:
+      - type: "text"
+        value: "H"
+      - type: "superscript"
+        contentsBegin: 3
+        contentsEnd: 14
+        children:
+          - type: "text"
+            value: "hello world"
+`;
+
+exports[`org/parser table 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 59
+children:
+  - type: "table"
+    tableType: "org"
+    tblfm: ""
+    contentsBegin: 1
+    contentsEnd: 59
+    children:
+      - type: "table-row"
+        rowType: "standard"
+        contentsBegin: 2
+        contentsEnd: 19
+        children:
+          - type: "table-cell"
+            contentsBegin: 3
+            contentsEnd: 8
+            children:
+              - type: "text"
+                value: "head1"
+          - type: "table-cell"
+            contentsBegin: 12
+            contentsEnd: 17
+            children:
+              - type: "text"
+                value: "head2"
+      - type: "table-row"
+        rowType: "rule"
+        contentsBegin: 21
+        contentsEnd: 21
+        children: []
+      - type: "table-row"
+        rowType: "standard"
+        contentsBegin: 40
+        contentsEnd: 58
+        children:
+          - type: "table-cell"
+            contentsBegin: 41
+            contentsEnd: 47
+            children:
+              - type: "text"
+                value: "value1"
+          - type: "table-cell"
+            contentsBegin: 50
+            contentsEnd: 56
+            children:
+              - type: "text"
+                value: "value2"
+`;
+
+exports[`org/parser table with format 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 39
+children:
+  - type: "table"
+    tableType: "org"
+    tblfm: "$2=$1^2::$3=$1^3"
+    contentsBegin: 1
+    contentsEnd: 13
+    children:
+      - type: "table-row"
+        rowType: "standard"
+        contentsBegin: 2
+        contentsEnd: 6
+        children:
+          - type: "table-cell"
+            contentsBegin: 3
+            contentsEnd: 4
+            children:
+              - type: "text"
+                value: "1"
+      - type: "table-row"
+        rowType: "standard"
+        contentsBegin: 8
+        contentsEnd: 12
+        children:
+          - type: "table-cell"
+            contentsBegin: 9
+            contentsEnd: 10
+            children:
+              - type: "text"
+                value: "2"
+`;
+
+exports[`org/parser table.el table 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 100
+children:
+  - type: "table"
+    affiliated: {}
+    tableType: "table.el"
+    tblfm: ""
+    value: "+--------+--------+
+
+      | head1  | head2  |
+
+      +--------+--------+
+
+      | value1 | value2 |
+
+      +--------+--------+"
+`;
+
+exports[`org/parser timestamps active 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 16
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 16
+    children:
+      - type: "timestamp"
+        timestampType: "active"
+        rawValue: "<2021-01-07 Thu>"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: null
+          minute: null
+        end: null
+`;
+
+exports[`org/parser timestamps active-range 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 34
+    children:
+      - type: "timestamp"
+        timestampType: "active-range"
+        rawValue: "<2021-01-07 Thu>--<2021-01-09 Sat>"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: null
+          minute: null
+        end:
+          year: 2021
+          month: 1
+          day: 9
+          hour: null
+          minute: null
+`;
+
+exports[`org/parser timestamps inactive 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 16
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 16
+    children:
+      - type: "timestamp"
+        timestampType: "inactive"
+        rawValue: "[2021-01-07 Thu]"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: null
+          minute: null
+        end: null
+`;
+
+exports[`org/parser timestamps inactive-range 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 34
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 34
+    children:
+      - type: "timestamp"
+        timestampType: "inactive-range"
+        rawValue: "[2021-01-07 Thu]--[2021-01-08 Fri]"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: null
+          minute: null
+        end:
+          year: 2021
+          month: 1
+          day: 8
+          hour: null
+          minute: null
+`;
+
+exports[`org/parser timestamps time range 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 28
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 28
+    children:
+      - type: "timestamp"
+        timestampType: "inactive-range"
+        rawValue: "[2021-01-07 Thu 19:36-20:38]"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: 19
+          minute: 36
+        end:
+          year: 2021
+          month: 1
+          day: 7
+          hour: 20
+          minute: 38
+`;
+
+exports[`org/parser timestamps with time 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 22
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 22
+    children:
+      - type: "timestamp"
+        timestampType: "inactive"
+        rawValue: "[2021-01-07 Thu 19:36]"
+        start:
+          year: 2021
+          month: 1
+          day: 7
+          hour: 19
+          minute: 36
+        end: null
+`;
+
+exports[`org/parser zero-width whitespace as emphasis separator 1`] = `
+type: "org-data"
+contentsBegin: 0
+contentsEnd: 12
+children:
+  - type: "paragraph"
+    affiliated: {}
+    contentsBegin: 0
+    contentsEnd: 12
+    children:
+      - type: "code"
+        value: "code"
+        children: []
+      - type: "text"
+        value: "​hello"
+`;
